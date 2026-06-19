@@ -18,7 +18,8 @@ def clear_console():
     
 def exit_on_signal(signum, frame):
     if signum == signal.SIGINT:
-        print(f"\n\n{RED}[{RED}!{RED}] {RED} Program Interrupted!")
+        type_writer(f"\n{GREEN} Exiting the program....")
+        type_writer(f"\n{GREEN} Thanks for using my script!")
         
     elif signum == signal.SIGTERM:
         print(f"\n\n{RED}[{RED}!{RED}]{RED} Program Terminated!")
